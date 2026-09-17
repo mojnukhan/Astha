@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="bloodGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF334B" />
+      <stop offset="50%" stop-color="#E50914" />
+      <stop offset="100%" stop-color="#99000C" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#E50914" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <!-- Blood drop -->
+  <path d="M50,8 C50,8 18,52 18,68 C18,85.67 32.33,100 50,100 C67.67,100 82,85.67 82,68 C82,52 50,8 50,8 Z" 
+        fill="url(#bloodGrad)" 
+        filter="url(#glow)" />
+  <!-- Medical cross -->
+  <rect x="44" y="46" width="12" height="30" rx="3" fill="#FFFFFF" />
+  <rect x="35" y="55" width="30" height="12" rx="3" fill="#FFFFFF" />
+</svg>

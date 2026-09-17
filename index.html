@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Astha (আস্থা) - রক্তদানে, জীবনের পাশে | Android Blood Donation App</title>
+  <meta name="title" content="Astha (আস্থা) - রক্তদানে, জীবনের পাশে | Android Blood Donation App">
+  <meta name="description" content="আস্থা (Astha) বাংলাদেশের একটি আধুনিক স্বেচ্ছায় রক্তদান অ্যান্ড্রয়েড অ্যাপ। জরুরি রক্তের প্রয়োজনে রক্তদাতা খুঁজুন, রক্তের আবেদন তৈরি করুন এবং তাৎক্ষণিক অ্যালার্ট পান।">
+  <meta name="keywords" content="Astha, আস্থা, রক্তদান, রক্তদাতা, Blood Donation App, Bangladesh Blood Bank, Blood Donor App, স্বেচ্ছায় রক্তদান">
+  <meta name="author" content="Astha Team">
+  <meta name="theme-color" content="#E52535">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="./">
+  <meta property="og:title" content="Astha (আস্থা) - রক্তদানে, জীবনের পাশে">
+  <meta property="og:description" content="জরুরি রক্তের প্রয়োজনে মুহূর্তের মধ্যে নিকটস্থ রক্তদাতা খুঁজুন এবং আবেদন জানান। সম্পূর্ণ বিনামূল্যে এবং নিরাপদ।">
+  <meta property="og:image" content="./assets/images/logo.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+  <link rel="shortcut icon" href="./assets/images/favicon.svg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Light Effects -->
+  <div class="bg-ambient bg-ambient-1" aria-hidden="true"></div>
+  <div class="bg-ambient bg-ambient-2" aria-hidden="true"></div>
+  <div class="bg-ambient bg-ambient-3" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="./index.html" class="brand-logo" id="navBrand">
+        <div class="logo-img-wrapper">
+          <img src="./assets/images/logo.jpg" alt="Astha Logo" width="40" height="40">
+        </div>
+        <div class="brand-name">
+          Astha <span class="brand-name-bn">আস্থা</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links">
+        <li><a href="#features" class="nav-link">ফিচারসমূহ</a></li>
+        <li><a href="#how-it-works" class="nav-link">কাজের ধাপ</a></li>
+        <li><a href="#screenshots" class="nav-link">স্ক্রিনশট</a></li>
+        <li><a href="#compatibility" class="nav-link">রক্তের গ্রুপ গাইড</a></li>
+        <li><a href="#faq" class="nav-link">প্রশ্নোত্তর</a></li>
+        <li><a href="#contact" class="nav-link">যোগাযোগ</a></li>
+      </ul>
+
+      <!-- Nav CTA -->
+      <div class="nav-cta">
+        <a href="#download" class="btn btn-primary" id="headerDownloadBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 0 1-.61-1.637V3.451c0-.624.23-1.206.609-1.637zm11.24 11.24l2.58 2.58-12.01 6.84 9.43-9.42zm2.58-2.108l-2.58 2.58-9.43-9.42 12.01 6.84zm1.196 1.183l3.68 2.09a1.69 1.69 0 0 1 0 2.962l-3.68 2.09-2.22-2.22 2.22-2.922z"/>
+          </svg>
+          অ্যাপ নামান
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-links">
+      <li><a href="#features" class="mobile-nav-link"><span>ফিচারসমূহ (Features)</span> <span>&rarr;</span></a></li>
+      <li><a href="#how-it-works" class="mobile-nav-link"><span>কাজের ধাপ (How it Works)</span> <span>&rarr;</span></a></li>
+      <li><a href="#screenshots" class="mobile-nav-link"><span>অ্যাপ স্ক্রিনশট (Screenshots)</span> <span>&rarr;</span></a></li>
+      <li><a href="#compatibility" class="mobile-nav-link"><span>রক্তের গ্রুপ নির্দেশিকা</span> <span>&rarr;</span></a></li>
+      <li><a href="#why-astha" class="mobile-nav-link"><span>কেন আস্থা? (Why Astha)</span> <span>&rarr;</span></a></li>
+      <li><a href="#faq" class="mobile-nav-link"><span>সাধারণ জিজ্ঞাসা (FAQ)</span> <span>&rarr;</span></a></li>
+      <li><a href="#contact" class="mobile-nav-link"><span>জরুরি হেল্পলাইন ও যোগাযোগ</span> <span>&rarr;</span></a></li>
+      <li><a href="./privacy.html" class="mobile-nav-link"><span>প্রাইভেসি পলিসি (Privacy Policy)</span> <span>&rarr;</span></a></li>
+    </ul>
+    <div style="margin-top: auto;">
+      <a href="#download" class="btn btn-primary" style="width: 100%; text-align: center;">
+        Google Play থেকে ডাউনলোড করুন
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="section hero-section" id="hero">
+    <div class="container hero-grid">
+      
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <div class="pulse-dot"></div>
+          <span class="hero-badge-text bn-font">রক্তদানে, জীবনের পাশে • স্বেচ্ছায় রক্তদান</span>
+        </div>
+
+        <h1 class="hero-title bn-font">
+          একটি রক্তদান, বাঁচাতে পারে<br>
+          <span class="gradient-text">একটি অমূল্য জীবন</span>
+          <span class="bn-sub">Save Lives Faster with Astha Blood Network</span>
+        </h1>
+
+        <p class="hero-description bn-font">
+          ‘আস্থা’ রক্তদাতা এবং জরুরি রোগীর মাঝে তৈরি করে দ্রুততম মেলবন্ধন। সেকেন্ডের মধ্যে রক্তের গ্রুপ ও এলাকা অনুযায়ী যাচাইকৃত রক্তদাতা খুঁজুন, রক্তের জরুরি আবেদন জানান এবং তাৎক্ষণিক পুশ নোটিফিকেশনের মাধ্যমে জীবন বাঁচাতে এগিয়ে আসুন।
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-actions">
+          <a href="#download" class="btn-playstore" id="heroPlayBtn">
+            <svg class="playstore-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 0 1-.61-1.637V3.451c0-.624.23-1.206.609-1.637zm11.24 11.24l2.58 2.58-12.01 6.84 9.43-9.42zm2.58-2.108l-2.58 2.58-9.43-9.42 12.01 6.84zm1.196 1.183l3.68 2.09a1.69 1.69 0 0 1 0 2.962l-3.68 2.09-2.22-2.22 2.22-2.922z"/>
+            </svg>
+            <div>
+              <span class="playstore-sub">GET IT ON</span>
+              <span class="playstore-main">Google Play</span>
+            </div>
+          </a>
+
+          <a href="#features" class="btn btn-secondary bn-font" id="heroLearnBtn">
+            ফিচারগুলো দেখুন &darr;
+          </a>
+        </div>
+
+        <!-- Trust / Stats Bar -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">১০০%<span>ফ্রি</span></div>
+            <div class="stat-label bn-font">অলাভজনক সেবা</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-number">২৪/৭<span>লাইভ</span></div>
+            <div class="stat-label bn-font">জরুরি অ্যালার্ট</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-number">৬৪<span>জেলা</span></div>
+            <div class="stat-label bn-font">সারাদেশ জুড়ে</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Phone Mockup -->
+      <div class="hero-visual">
+        <div class="phone-mockup-wrapper">
+          <div class="phone-glow-ring"></div>
+          
+          <!-- Floating Badge 1: Emergency Blood Request -->
+          <div class="floating-badge floating-badge-1">
+            <div class="badge-icon-box red">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="badge-text-title bn-font">জরুরি রক্তের আবেদন!</div>
+              <div class="badge-text-sub">B+ রক্ত প্রয়োজন • ২ ব্যাগ</div>
+            </div>
+          </div>
+
+          <!-- Phone Frame -->
+          <div class="phone-frame">
+            <div class="phone-camera-notch">
+              <div class="notch-lens"></div>
+            </div>
+            <img src="./assets/images/screen-home.jpg" alt="Astha Home Dashboard Screen" class="phone-screen" id="heroScreenImg">
+          </div>
+
+          <!-- Floating Badge 2: Available Donors -->
+          <div class="floating-badge floating-badge-2">
+            <div class="badge-icon-box green">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <div>
+              <div class="badge-text-title bn-font">সক্রিয় রক্তদাতা প্রস্তুত</div>
+              <div class="badge-text-sub">Available to Donate</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Core App Features Section -->
+  <section class="section" id="features">
+    <div class="container">
+      
+      <div class="text-center">
+        <div class="section-tag bn-font">প্রধান ফিচারসমূহ</div>
+        <h2 class="section-title bn-font">
+          একটি পূর্ণাঙ্গ ও জীবনরক্ষাকারী <span>মোবাইল প্ল্যাটফর্ম</span>
+        </h2>
+        <p class="section-desc bn-font">
+          রক্তদান ও জরুরি রক্তের প্রয়োজনে প্রতিটি সেকেন্ড অত্যন্ত মূল্যবান। ‘আস্থা’ অ্যাপে প্রতিটি ফিচার এমনভাবে সাজানো হয়েছে যেন যেকোনো ব্যবহারকারী সহজে এবং নির্বিঘ্নে সেবা পেতে পারেন।
+        </p>
+      </div>
+
+      <div class="features-grid">
+
+        <!-- Feature 1: Find Blood Donor -->
+        <div class="feature-card" id="feature-find-donor">
+          <div class="feature-card-header">
+            <div class="feature-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <span class="feature-pill">Find Donors</span>
+          </div>
+          <h3 class="feature-title bn-font">
+            রক্তদাতা অনুসন্ধান <span class="feature-title-bn">(Smart Geo-Search)</span>
+          </h3>
+          <p class="feature-description bn-font">
+            বাংলাদেশের যেকোনো স্থান থেকে বিভাগ, জেলা ও থানা/উপজেলা এবং ৮টি রক্তের গ্রুপ (A+, A-, B+, B-, AB+, AB-, O+, O-) ফিল্টার করে মুহূর্তেই সক্রিয় রক্তদাতাদের তালিকা পাওয়া যায়।
+          </p>
+          <ul class="feature-highlights bn-font">
+            <li class="feature-highlight-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>বিভাগ, জেলা এবং উপজেলা ভিত্তিক নিখুঁত ফিল্টারিং</span>
+            </li>
+            <li class="feature-highlight-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>রক্তদাতার রিয়েল-টাইম "Available to Donate" স্ট্যাটাস</span>
+            </li>
+            <li class="feature-highlight-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>নিকটবর্তী সক্রিয় ডোনারদের সাথে দ্রুত যোগাযোগ</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Feature 2: Create Blood Request -->
+        <div class="feature-card" id="feature-blood-request">
+          <div class="feature-card-header">
+            <div class="feature-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="currentColor"/>
+              </svg>
+            </div>
+            <span class="feature-pill urgency">Emergency Request</span>
+          </div>
+          <h3 class="feature-title bn-font">
+            জরুরি রক্তের আবেদন <span class="feature-title-bn">(Instant Broadcast)</span>
+          </h3>
+          <p class="feature-description bn-font">
+            জরুরি পরিস্থিতিতে রোগীর নাম, হাসপাতালের ঠিকানা, প্রয়োজনীয় রক্তের ব্যাগ সংখ্যা ও জরুরিতার মাত্রা নির্ধারণ করে এক ক্লিকে রিকোয়েস্ট তৈরি করুন।
+          </p>
+          <ul class="feature-highlights bn-font">
+            <li class="feature-highlight-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>জরুরিতার স্তর নির্বাচন: Normal, Urgent এবং Critical</span>
+            </li>
+            <li class="feature-highlight-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>হাসপাতালের লোকেশন এবং রোগীর সুনির্দিষ্ট তথ্য ইনপুট</span>
+            </li>
+            <li class="feature-highlight-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>ম্যাচিং রক্তদাতাদের ফোনে তাৎক্ষণিক অ্যালার্ট প্রদান</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Feature 3: Donor Registration -->
+        <div class="feature-card" id="feature-donor-registration">
+          <div class="feature-card-header">
+            <div class="feature-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <line x1="19" y1="8" x2="19" y2="14"></line>
+                <line x1="22" y1="11" x2="16" y2="11"></line>
+              </svg>
+            </div>
+            <span class="feature-pill">Donor Register</span>
+          </div>
+          <h3 class="feature-title bn-font">
+            রক্তদাতা হিসেবে নিবন্ধন <span class="feature-title-bn">(Become a Lifesaver)</span>
+          </h3>
+          <p class="feature-description bn-font">
+            সহজেই আপনার নাম, রক্তের গ্রুপ ও এলাকা যুক্ত করে রক্তদাতা পরিবারে যুক্ত হোন। আপনার এক ফোঁটা রক্তে একটি অসহায় পরিবার খুঁজে পেতে পারে বাঁচার নতুন আলো।
+          </p>
+          <ul class="feature-highlights bn-font">
+            <li class="feature-highlight-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>মাত্র ১ মিনিটে সহজ ও নিরাপদ নিবন্ধন প্রক্রিয়া</span>
+            </li>
+            <li class="feature-highlight-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>শেষ রক্তদানের তারিখ অনুযায়ী স্বয়ংক্রিয় বিরতি ট্র্যাকার</span>
+            </li>
+            <li class="feature-highlight-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>গোপনীয়তা রক্ষা করে নিরাপদ যোগাযোগ ব্যবস্থা</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Feature 4: User Profile & Alerts -->
+        <div class="feature-card" id="feature-profile">
+          <div class="feature-card-header">
+            <div class="feature-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+              </svg>
+            </div>
+            <span class="feature-pill">Alerts & Profile</span>
+          </div>
+          <h3 class="feature-title bn-font">
+            প্রোফাইল ও নোটিফিকেশন <span class="feature-title-bn">(Smart Alerts)</span>
+          </h3>
+          <p class="feature-description bn-font">
+            ব্যবহারকারী যখন খুশি তাঁর রক্তদানের প্রাপ্যতা (Availability Toggle) চালু বা বন্ধ রাখতে পারেন। আশেপাশের জরুরি রক্তের আপডেট সরাসরি নোটিফিকেশন ফিডে দেখা যায়।
+          </p>
+          <ul class="feature-highlights bn-font">
+            <li class="feature-highlight-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>প্রাপ্যতা নিয়ন্ত্রণ (Available / Unavailable) বোতাম</span>
+            </li>
+            <li class="feature-highlight-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>জরুরি নোটিফিকেশন ফিডে সরাসরি হাসপাতালের ঠিকানা ও রোগীর তথ্য</span>
+            </li>
+            <li class="feature-highlight-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>ব্যক্তিগত রক্তদানের ইতিহাস এবং সামাজিক অবদানের রেকর্ড</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Screenshots Showcase Section -->
+  <section class="section screenshots-section" id="screenshots">
+    <div class="container">
+      
+      <div class="text-center">
+        <div class="section-tag bn-font">অ্যাপ ইন্টারফেস ও স্ক্রিনশট</div>
+        <h2 class="section-title bn-font">
+          সহজ, আধুনিক এবং <span>আকর্ষণীয় ডিজাইন</span>
+        </h2>
+        <p class="section-desc bn-font">
+          আস্থা অ্যাপের প্রতিটি ইন্টারফেস ব্যবহারকারীর সর্বোচ্চ সুবিধার কথা বিবেচনা করে ডার্ক থিম এবং স্পষ্ট বাংলায় ডিজাইন করা হয়েছে। নিচে মূল স্ক্রিনগুলো দেখুন:
+        </p>
+      </div>
+
+      <!-- Screenshot Navigation Tabs -->
+      <div class="screenshots-tabs">
+        <button class="screenshot-tab active" data-screen="home">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+          ১. হোম ড্যাশবোর্ড
+        </button>
+        <button class="screenshot-tab" data-screen="find">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          ২. রক্তদাতা সন্ধান
+        </button>
+        <button class="screenshot-tab" data-screen="request">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          ৩. রক্তের আবেদন
+        </button>
+        <button class="screenshot-tab" data-screen="alerts">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path></svg>
+          ৪. জরুরি নোটিফিকেশন
+        </button>
+      </div>
+
+      <!-- Main Showcase Viewer -->
+      <div class="showcase-display">
+        
+        <!-- Showcase Phone -->
+        <div class="showcase-phone-container">
+          <div class="showcase-phone">
+            <div class="phone-frame">
+              <div class="phone-camera-notch">
+                <div class="notch-lens"></div>
+              </div>
+              <img src="./assets/images/screen-home.jpg" alt="Astha Screenshot" class="phone-screen" id="showcaseImg">
+            </div>
+          </div>
+        </div>
+
+        <!-- Showcase Information -->
+        <div class="showcase-info">
+          <div class="showcase-screen-badge bn-font" id="showcaseBadge">হোম স্ক্রিন • 01</div>
+          <h3 class="showcase-title bn-font" id="showcaseTitle">স্মার্ট হোম ড্যাশবোর্ড (Smart Dashboard)</h3>
+          <p class="showcase-desc bn-font" id="showcaseDesc">
+            অ্যাপ খুললেই ব্যবহারকারী দেখতে পান জরুরি রক্তের আবেদন, রক্তের গ্রুপ অনুসারে তাত্ক্ষণিক ফিল্টারিং এবং আশেপাশের রক্তদাতাদের তালিকা।
+          </p>
+
+          <ul class="showcase-bullets bn-font" id="showcaseBullets">
+            <li class="showcase-bullet">
+              <div class="bullet-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="bullet-text">
+                <strong>জরুরি রক্তের নোটিশ</strong>
+                <span>ক্রিটিক্যাল রোগীদের জন্য এক ট্যাপেই জরুরি রক্তের আবেদন কার্ড দেখা যায়।</span>
+              </div>
+            </li>
+            <li class="showcase-bullet">
+              <div class="bullet-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="bullet-text">
+                <strong>রক্তের গ্রুপভিত্তিক দ্রুত সন্ধান</strong>
+                <span>A+, B+, AB+, O+ সহ সকল গ্রুপের রক্তদাতাদের তাৎক্ষণিক তালিকা।</span>
+              </div>
+            </li>
+            <li class="showcase-bullet">
+              <div class="bullet-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="bullet-text">
+                <strong>নিকটস্থ সক্রিয় রক্তদাতা</strong>
+                <span>আপনার এলাকার আশেপাশে কোন রক্তদাতা প্রস্তুত আছেন তা সরাসরি দেখানো হয়।</span>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Thumbnail Selector Row -->
+          <div class="gallery-nav-row">
+            <div class="gallery-thumbnail active" data-screen="home">
+              <div class="gallery-thumb-img-box">
+                <img src="./assets/images/screen-home.jpg" alt="Home thumb">
+              </div>
+              <div class="gallery-thumb-label bn-font">হোম ড্যাশবোর্ড</div>
+            </div>
+            <div class="gallery-thumbnail" data-screen="find">
+              <div class="gallery-thumb-img-box">
+                <img src="./assets/images/screen-find.jpg" alt="Find thumb">
+              </div>
+              <div class="gallery-thumb-label bn-font">রক্তদাতা সন্ধান</div>
+            </div>
+            <div class="gallery-thumbnail" data-screen="request">
+              <div class="gallery-thumb-img-box">
+                <img src="./assets/images/screen-request.jpg" alt="Request thumb">
+              </div>
+              <div class="gallery-thumb-label bn-font">রক্তের আবেদন</div>
+            </div>
+            <div class="gallery-thumbnail" data-screen="alerts">
+              <div class="gallery-thumb-img-box">
+                <img src="./assets/images/screen-alerts.jpg" alt="Alerts thumb">
+              </div>
+              <div class="gallery-thumb-label bn-font">জরুরি অ্যালার্ট</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- How Astha Works Section -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      
+      <div class="text-center">
+        <div class="section-tag bn-font">কাজের ধাপ</div>
+        <h2 class="section-title bn-font">
+          ৩টি সহজ ধাপে <span>রক্তদান ও সেবা গ্রহণ</span>
+        </h2>
+        <p class="section-desc bn-font">
+          জরুরি মুহূর্তে জটিল প্রক্রিয়ার কোনো সুযোগ নেই। আস্থা অ্যাপে আপনি খুব দ্রুত আবেদন জানাতে বা রক্তদাতা খুঁজে পেতে পারেন।
+        </p>
+      </div>
+
+      <div class="steps-container">
+        
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <div class="step-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <h3 class="step-title bn-font">
+            নিবন্ধন ও প্রোফাইল তৈরি
+            <span class="step-title-bn">Sign Up & Setup</span>
+          </h3>
+          <p class="step-description bn-font">
+            অ্যাপটি ইনস্টল করে আপনার ফোন নম্বর, ঠিকানা এবং রক্তের গ্রুপ দিয়ে দ্রুত প্রোফাইল সম্পন্ন করুন। রক্তদাতা হলে ডোনেশন স্ট্যাটাস সক্রিয় রাখুন।
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <div class="step-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </div>
+          <h3 class="step-title bn-font">
+            আবেদন পোস্ট বা সার্চ
+            <span class="step-title-bn">Post or Search</span>
+          </h3>
+          <p class="step-description bn-font">
+            জরুরি রক্তের প্রয়োজন হলে হাসপাতালের নাম ও ব্যাগের সংখ্যা দিয়ে রিকোয়েস্ট তৈরি করুন, অথবা সরাসরি এলাকা নির্বাচন করে ডোনারদের লিস্ট দেখুন।
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <div class="step-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+          <h3 class="step-title bn-font">
+            যোগাযোগ ও জীবন রক্ষা
+            <span class="step-title-bn">Connect & Save</span>
+          </h3>
+          <p class="step-description bn-font">
+            নোটিফিকেশন পাওয়া রক্তদাতার সাথে সরাসরি যোগাযোগ সম্পন্ন করুন এবং হাসপাতালে যথাসময়ে রক্তদান নিশ্চিত করে জীবন বাঁচাতে ভূমিকা রাখুন।
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why Choose Astha Section -->
+  <section class="section" id="why-astha">
+    <div class="container">
+      
+      <div class="text-center">
+        <div class="section-tag green bn-font">আমাদের বৈশিষ্ট্য</div>
+        <h2 class="section-title bn-font">
+          কেন ব্যবহার করবেন <span>আস্থা রক্তদান অ্যাপ?</span>
+        </h2>
+        <p class="section-desc bn-font">
+          একটি নিরাপদ ও প্রযুক্তিনির্ভর রক্তদান প্ল্যাটফর্ম যা রোগীর অভিভাবক এবং রক্তদাতাদের মাঝে সর্বোচ্চ বিশ্বস্ততা গড়ে তোলে।
+        </p>
+      </div>
+
+      <div class="why-grid">
+        
+        <!-- 1 -->
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+          </div>
+          <h3 class="why-title bn-font">তাত্ক্ষণিক জরুরি ব্রডকাস্ট</h3>
+          <p class="why-desc bn-font">
+            ক্রিটিক্যাল মুহূর্তে রক্ত চেয়ে পোস্ট করা মাত্রই আশেপাশের ম্যাচিং গ্রুপের রক্তদাতাদের মোবাইলে পুশ নোটিফিকেশন পৌঁছে যায়।
+          </p>
+        </div>
+
+        <!-- 2 -->
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 class="why-title bn-font">১০০% ফ্রি ও অলাভজনক</h3>
+          <p class="why-desc bn-font">
+            আস্থা সম্পূর্ণ স্বেচ্ছাসেবী একটি উদ্যোগ। এখানে কোনো বিজ্ঞাপন নেই, কোনো প্রকার ফি বা হিডেন চার্জ নেই।
+          </p>
+        </div>
+
+        <!-- 3 -->
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+          <h3 class="why-title bn-font">নিরাপত্তা ও গোপনীয়তা</h3>
+          <p class="why-desc bn-font">
+            রক্তদাতাদের ব্যক্তিগত তথ্য সুরক্ষিত থাকে। রক্তদাতার অনুমতি ও সঠিক জরুরি যাচাইকরণ ছাড়া অযাচিত কল আসে না।
+          </p>
+        </div>
+
+        <!-- 4 -->
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="10" r="3"></circle>
+              <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"></path>
+            </svg>
+          </div>
+          <h3 class="why-title bn-font">নিকটস্থ এলাকা ভিত্তিক ফিল্টার</h3>
+          <p class="why-desc bn-font">
+            বাংলাদেশের আটটি বিভাগ, চৌষট্টি জেলা এবং সকল উপজেলার ডেটাবেস যুক্ত থাকায় আপনার ঠিক পাশের রক্তদাতাকে খুঁজে নেওয়া সম্ভব।
+          </p>
+        </div>
+
+        <!-- 5 -->
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <h3 class="why-title bn-font">রক্তদানের বিরতি ট্র্যাকার</h3>
+          <p class="why-desc bn-font">
+            একজন ব্যক্তি রক্ত দেওয়ার পর ৩-৪ মাস সময়কাল পর্যন্ত সুস্থ থাকতে অ্যাপ স্বয়ংক্রিয়ভাবে তার স্ট্যাটাস আপ-টু-ডেট রাখে।
+          </p>
+        </div>
+
+        <!-- 6 -->
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 class="why-title bn-font">একটি বিশাল মানবিক পরিবার</h3>
+          <p class="why-desc bn-font">
+            হাজারো স্বেচ্ছাসেবী রক্তদাতার সমন্বয়ে গঠিত আস্থা কমিউনিটি মানুষের জীবন বাঁচাতে যেকোনো সময় পাশে দাঁড়াতে প্রতিশ্রুতিবদ্ধ।
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Blood Compatibility Guide -->
+  <section class="section" id="compatibility">
+    <div class="container">
+      
+      <div class="text-center">
+        <div class="section-tag bn-font">রক্তের গ্রুপ নির্দেশিকা</div>
+        <h2 class="section-title bn-font">
+          কাকে রক্ত দিতে পারবেন? <span>কার কাছ থেকে নিতে পারবেন?</span>
+        </h2>
+        <p class="section-desc bn-font">
+          যেকোনো একটি রক্তের গ্রুপ সিলেক্ট করে দেখে নিন কার সাথে কার রক্তের সামঞ্জস্য বা ম্যাচ রয়েছে:
+        </p>
+      </div>
+
+      <div class="matrix-card">
+        
+        <!-- Blood Group Buttons -->
+        <div class="blood-selector-row">
+          <button class="blood-btn" data-group="O-">O-</button>
+          <button class="blood-btn" data-group="O+">O+</button>
+          <button class="blood-btn" data-group="A-">A-</button>
+          <button class="blood-btn" data-group="A+">A+</button>
+          <button class="blood-btn" data-group="B-">B-</button>
+          <button class="blood-btn active" data-group="B+">B+</button>
+          <button class="blood-btn" data-group="AB-">AB-</button>
+          <button class="blood-btn" data-group="AB+">AB+</button>
+        </div>
+
+        <!-- Compatibility Output -->
+        <div class="matrix-results">
+          
+          <!-- Can Give To -->
+          <div class="matrix-result-box">
+            <div class="matrix-result-header">
+              <div class="matrix-badge-icon give">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="19" x2="12" y2="5"></line>
+                  <polyline points="5 12 12 5 19 12"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h4 class="matrix-box-title bn-font">রক্ত দিতে পারবেন (Can Give To)</h4>
+                <div class="matrix-box-sub bn-font">এই গ্রুপের রোগীরা আপনার রক্ত নিতে পারবেন</div>
+              </div>
+            </div>
+            <div class="compatible-pills" id="compatGiveList">
+              <!-- Rendered dynamically by JS -->
+            </div>
+          </div>
+
+          <!-- Can Receive From -->
+          <div class="matrix-result-box">
+            <div class="matrix-result-header">
+              <div class="matrix-badge-icon receive">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h4 class="matrix-box-title bn-font">রক্ত নিতে পারবেন (Can Receive From)</h4>
+                <div class="matrix-box-sub bn-font">এই গ্রুপের দাতাদের কাছ থেকে রক্ত গ্রহণ করা যাবে</div>
+              </div>
+            </div>
+            <div class="compatible-pills" id="compatReceiveList">
+              <!-- Rendered dynamically by JS -->
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Medical Fact Box -->
+        <div style="margin-top: 24px; padding: 16px 20px; background: rgba(229, 37, 53, 0.08); border-radius: var(--radius-md); border: 1px solid rgba(229, 37, 53, 0.2); display: flex; align-items: center; gap: 12px;">
+          <span style="font-size: 1.3rem;">💡</span>
+          <p class="bn-font" id="bloodFactText" style="font-size: 0.95rem; color: #FFAEB7;">
+            বাংলাদেশে B+ রক্তগ্রুপের বহুসংখ্যক মানুষ রয়েছেন এবং হাসপাতালে এর চাহিদা সর্বদা সর্বাধিক।
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Download CTA Banner -->
+  <section class="section" id="download">
+    <div class="container">
+      <div class="cta-banner">
+        <div class="cta-grid">
+          
+          <div>
+            <div class="section-tag bn-font">আজই যুক্ত হোন</div>
+            <h2 class="cta-heading bn-font">
+              রক্তদানে এগিয়ে আসুন,<br>
+              <span style="color: #FF5A6B;">জীবনের পাশে থাকুন</span>
+            </h2>
+            <p class="cta-desc bn-font">
+              ‘আস্থা’ অ্যাপটি আপনার অ্যান্ড্রয়েড ডিভাইসে নামিয়ে নিন এবং জরুরি প্রয়োজনে সহায়ক ভূমিকা পালন করুন। আপনার একটি মহৎ সিদ্ধান্ত বাঁচাতে পারে একটি জীবন।
+            </p>
+            <div class="cta-buttons">
+              <a href="#" class="btn-playstore" onclick="alert('Google Play Store এ খুব শীঘ্রই আসছে! সরাসরি APK ডাউনলোডের সুবিধা চালু আছে।'); return false;">
+                <svg class="playstore-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 0 1-.61-1.637V3.451c0-.624.23-1.206.609-1.637zm11.24 11.24l2.58 2.58-12.01 6.84 9.43-9.42zm2.58-2.108l-2.58 2.58-9.43-9.42 12.01 6.84zm1.196 1.183l3.68 2.09a1.69 1.69 0 0 1 0 2.962l-3.68 2.09-2.22-2.22 2.22-2.922z"/>
+                </svg>
+                <div>
+                  <span class="playstore-sub">GET IT ON</span>
+                  <span class="playstore-main">Google Play</span>
+                </div>
+              </a>
+
+              <a href="#contact" class="btn btn-secondary bn-font">
+                হেল্পলাইন ও সহায়তা &rarr;
+              </a>
+            </div>
+          </div>
+
+          <!-- QR Code Preview Box -->
+          <div class="qr-box-wrapper">
+            <div class="qr-code-display" title="Scan to download Astha app">
+              <!-- Clean SVG QR Code Representation -->
+              <svg viewBox="0 0 100 100" fill="#000000">
+                <!-- Outer Corners -->
+                <rect x="5" y="5" width="28" height="28" rx="4" fill="#000" />
+                <rect x="9" y="9" width="20" height="20" rx="2" fill="#fff" />
+                <rect x="13" y="13" width="12" height="12" fill="#E52535" />
+
+                <rect x="67" y="5" width="28" height="28" rx="4" fill="#000" />
+                <rect x="71" y="9" width="20" height="20" rx="2" fill="#fff" />
+                <rect x="75" y="13" width="12" height="12" fill="#E52535" />
+
+                <rect x="5" y="67" width="28" height="28" rx="4" fill="#000" />
+                <rect x="9" y="71" width="20" height="20" rx="2" fill="#fff" />
+                <rect x="13" y="75" width="12" height="12" fill="#E52535" />
+
+                <!-- Mock QR Bits -->
+                <rect x="38" y="10" width="8" height="8" fill="#000" />
+                <rect x="50" y="10" width="8" height="8" fill="#000" />
+                <rect x="42" y="24" width="6" height="6" fill="#000" />
+                <rect x="52" y="24" width="8" height="6" fill="#000" />
+                <rect x="12" y="42" width="8" height="8" fill="#000" />
+                <rect x="26" y="42" width="6" height="8" fill="#000" />
+                <rect x="38" y="40" width="10" height="10" fill="#E52535" />
+                <rect x="52" y="40" width="8" height="8" fill="#000" />
+                <rect x="65" y="40" width="10" height="8" fill="#000" />
+                <rect x="80" y="42" width="10" height="8" fill="#000" />
+                <rect x="38" y="55" width="8" height="10" fill="#000" />
+                <rect x="52" y="54" width="8" height="8" fill="#000" />
+                <rect x="66" y="54" width="12" height="8" fill="#000" />
+                <rect x="40" y="70" width="10" height="8" fill="#000" />
+                <rect x="56" y="70" width="8" height="10" fill="#000" />
+                <rect x="70" y="70" width="10" height="8" fill="#000" />
+                <rect x="84" y="70" width="6" height="8" fill="#000" />
+                <rect x="40" y="84" width="14" height="6" fill="#000" />
+                <rect x="60" y="84" width="10" height="6" fill="#000" />
+                <rect x="76" y="82" width="14" height="8" fill="#000" />
+              </svg>
+            </div>
+            <div class="qr-caption bn-font">মোবাইল দিয়ে স্ক্যান করুন</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section" id="faq">
+    <div class="container">
+      
+      <div class="text-center">
+        <div class="section-tag bn-font">সাধারণ জিজ্ঞাসা</div>
+        <h2 class="section-title bn-font">
+          সচরাচর জিজ্ঞাসিত <span>প্রশ্নের উত্তর (FAQ)</span>
+        </h2>
+        <p class="section-desc bn-font">
+          আস্থা অ্যাপ এবং রক্তদান সংক্রান্ত বিষয়ে আপনার মনে থাকা সাধারণ প্রশ্নের সমাধান নিচে তুলে ধরা হলো:
+        </p>
+      </div>
+
+      <div class="faq-container">
+        
+        <!-- FAQ 1 -->
+        <div class="faq-item active">
+          <button class="faq-question bn-font">
+            <span>১. কারা রক্তদান করতে পারেন এবং এর যোগ্যতা কী?</span>
+            <div class="faq-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-answer bn-font">
+            ১৮ থেকে ৬০ বছর বয়সী যেকোনো সুস্থ নারী ও পুরুষ রক্তদান করতে পারেন। রক্তদাতার ওজন কমপক্ষে ৪৫-৫০ কেজি হতে হবে এবং শেষ রক্তদানের পর কমপক্ষে ৩ থেকে ৪ মাস অতিবাহিত হতে হবে।
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-question bn-font">
+            <span>২. আস্থা অ্যাপ ব্যবহার করতে কোনো ফি বা টাকা দিতে হবে কি?</span>
+            <div class="faq-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-answer bn-font">
+            না, কোনো ফি নেই। ‘আস্থা’ সম্পূর্ণ বিনামূল্যে পরিচালিত একটি অলাভজনক ও মানবিক উদ্যোগ। এখানে রক্তদাতা বা রোগী কারো কাছ থেকেই কোনো ধরনের সার্ভিস চার্জ বা ফি গ্রহণ করা হয় না।
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-question bn-font">
+            <span>৩. রক্তদাতার ফোন নম্বর ও তথ্যের গোপনীয়তা কীভাবে সংরক্ষিত হয়?</span>
+            <div class="faq-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-answer bn-font">
+            আমরা ব্যবহারকারীদের ডেটা সুরক্ষায় সর্বোচ্চ অগ্রাধিকার দিই। অপ্রয়োজনীয় বা স্প্যাম কল রোধে অ্যাপে কড়া নিয়ন্ত্রণ রয়েছে এবং রক্তদাতা চাইলে যেকোনো সময় তাঁর প্রোফাইল ‘Unavailable’ করে রাখতে পারেন।
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-question bn-font">
+            <span>৪. জরুরি রক্তের রিকোয়েস্ট পাঠালে রক্তদাতাদের কাছে নোটিফিকেশন কত দ্রুত পৌঁছায়?</span>
+            <div class="faq-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-answer bn-font">
+            আবেদন জমা দেওয়ার সাথে সাথে ক্লাউড পুশ নোটিফিকেশন সার্ভিসের মাধ্যমে সংশ্লিষ্ট রক্তগ্রুপ এবং এলাকার সকল সক্রিয় ডোনারের অ্যান্ড্রয়েড ডিভাইসে নিমেষেই নোটিফিকেশন পৌঁছে যায়।
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button class="faq-question bn-font">
+            <span>৫. রক্তদানের পর কতদিন পর পুনরায় রক্ত দেওয়া যায়?</span>
+            <div class="faq-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-answer bn-font">
+            সাধারণত রক্তদানের ৩ থেকে ৪ মাস পর শরীরে রক্তকণিকা পুরোপুরি স্বাভাবিক পর্যায়ে পৌঁছায়। চিকিৎসকদের পরামর্শ অনুযায়ী সুস্থ পুরুষেরা ৩ মাস পর পর এবং নারীরা ৪ মাস পর পর রক্ত দিতে পারেন।
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Emergency Helpline & Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      
+      <div class="text-center">
+        <div class="section-tag bn-font">যোগাযোগ ও সহায়তা</div>
+        <h2 class="section-title bn-font">
+          জরুরি সেবা ও <span>আমাদের সাথে যোগাযোগ</span>
+        </h2>
+        <p class="section-desc bn-font">
+          অতি জরুরি মুহূর্তে ব্লাড ব্যাংকের হটলাইনে কল করুন অথবা অ্যাপ সংক্রান্ত যেকোনো মতামত ও সহায়তায় বার্তা পাঠান।
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Emergency Helpline Card -->
+        <div class="contact-info-card">
+          
+          <div class="helpline-box">
+            <div class="helpline-title bn-font">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              জরুরি ব্লাড ব্যাংক ও হটলাইন
+            </div>
+
+            <ul class="helpline-list">
+              <li class="helpline-item">
+                <span class="helpline-name bn-font">জাতীয় জরুরি সেবা (পুলিশ, অ্যাম্বুলেন্স)</span>
+                <span class="helpline-number">999</span>
+              </li>
+              <li class="helpline-item">
+                <span class="helpline-name bn-font">বাংলাদেশ রেড ক্রিসেন্ট ব্লাড সেন্টার</span>
+                <span class="helpline-number">02-9330188</span>
+              </li>
+              <li class="helpline-item">
+                <span class="helpline-name bn-font">কোয়ান্টাম ব্লাড ব্যাংক (২৪ ঘণ্টা)</span>
+                <span class="helpline-number">01714-010869</span>
+              </li>
+              <li class="helpline-item">
+                <span class="helpline-name bn-font">সন্ধানী (ডিএমসি ইউনিট)</span>
+                <span class="helpline-number">02-9668690</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-channels">
+            <div class="contact-channel-item">
+              <div class="channel-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="channel-info">
+                <strong>ইমেইল সহায়তা</strong>
+                <span>support@astha-blood.org</span>
+              </div>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="channel-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="channel-info">
+                <strong>কমিউনিটি হাব</strong>
+                <span>ঢাকা, বাংলাদেশ • সমগ্র বাংলাদেশে পরিচালিত</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="contact-form-card">
+          <h3 class="bn-font" style="font-size: 1.4rem; font-weight: 700; margin-bottom: 20px;">
+            আমাদের বার্তা পাঠান
+          </h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="contactName" class="form-label bn-font">আপনার নাম *</label>
+              <input type="text" id="contactName" class="form-input bn-font" placeholder="যেমন: তানজিলা আহমেদ" required>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail" class="form-label bn-font">ইমেইল ঠিকানা *</label>
+              <input type="email" id="contactEmail" class="form-input" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage" class="form-label bn-font">বার্তা বা মতামত *</label>
+              <textarea id="contactMessage" class="form-textarea bn-font" placeholder="আপনার কোনো পরামর্শ বা প্রশ্ন থাকলে বিস্তারিত লিখুন..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit-btn bn-font" id="submitContactBtn">
+              বার্তা পাঠান &rarr;
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Toast Message -->
+  <div class="toast-msg" id="toastMsg">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-green)" stroke-width="2.5">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <div class="bn-font" style="font-size: 0.95rem;">
+      ধন্যবাদ! আপনার বার্তা সফলভাবে পাঠানো হয়েছে। আমরা দ্রুত যোগাযোগ করব।
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      
+      <!-- Medical / Safety Disclaimer Banner (from app screenshot) -->
+      <div class="disclaimer-banner">
+        <div class="disclaimer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+          </svg>
+        </div>
+        <div class="disclaimer-text">
+          <strong>Important Medical Notice:</strong> Blood donation eligibility, compatibility, testing, and transfusion decisions must be confirmed by a qualified healthcare professional or authorized blood donation center. Astha acts solely as a communication platform connecting voluntary donors and recipients.
+        </div>
+      </div>
+
+      <!-- Main Footer Grid -->
+      <div class="footer-grid">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="logo-img-wrapper">
+              <img src="./assets/images/logo.jpg" alt="Astha Logo" width="40" height="40">
+            </div>
+            <div class="brand-name">
+              Astha <span class="brand-name-bn">আস্থা</span>
+            </div>
+          </div>
+          <p class="bn-font">
+            ‘রক্তদানে, জীবনের পাশে’ — একটি স্বচ্ছ, প্রযুক্তিনির্ভর ও সম্পূর্ণ অলাভজনক স্বেচ্ছায় রক্তদান প্ল্যাটফর্ম।
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Telegram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21.5 2L2 9.5l7 2.5 2.5 7 3-4 5 4 2-17z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title bn-font">ফিচারসমূহ</h4>
+          <ul class="footer-links bn-font">
+            <li><a href="#feature-find-donor" class="footer-link">রক্তদাতা অনুসন্ধান</a></li>
+            <li><a href="#feature-blood-request" class="footer-link">জরুরি রক্তের আবেদন</a></li>
+            <li><a href="#feature-donor-registration" class="footer-link">রক্তদাতা নিবন্ধন</a></li>
+            <li><a href="#compatibility" class="footer-link">গ্রুপ ম্যাচিং গাইড</a></li>
+          </ul>
+        </div>
+
+        <!-- Information -->
+        <div>
+          <h4 class="footer-col-title bn-font">তথ্য ও সহায়তা</h4>
+          <ul class="footer-links bn-font">
+            <li><a href="#how-it-works" class="footer-link">কাজের নিয়মাবলী</a></li>
+            <li><a href="#why-astha" class="footer-link">কেন আস্থা ব্যবহার করবেন</a></li>
+            <li><a href="#faq" class="footer-link">সাধারণ জিজ্ঞাসা (FAQ)</a></li>
+            <li><a href="#contact" class="footer-link">জরুরি ব্লাড ব্যাংক নম্বর</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div>
+          <h4 class="footer-col-title bn-font">আইনি ও নিয়মাবলী</h4>
+          <ul class="footer-links bn-font">
+            <li><a href="./privacy.html" class="footer-link">প্রাইভেসি পলিসি (Privacy)</a></li>
+            <li><a href="./privacy.html#terms" class="footer-link">ব্যবহারের শর্তাবলী</a></li>
+            <li><a href="./privacy.html#data" class="footer-link">ডেটা নিরাপত্তা নীতি</a></li>
+            <li><a href="#contact" class="footer-link">যোগাযোগ ও ফিডব্যাক</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div>
+          &copy; ২০২৫-২০২৬ Astha (আস্থা) • স্বেচ্ছায় রক্তদান উদ্যোগ। সর্বস্বত্ব সংরক্ষিত।
+        </div>
+        <div class="footer-bottom-links">
+          <a href="./privacy.html" class="footer-link">Privacy Policy</a>
+          <span>•</span>
+          <a href="#hero" class="footer-link">Back to Top &uarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
