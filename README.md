@@ -7,14 +7,16 @@ A modern, responsive, high-performance landing page for the **Astha (আস্�
 
 ## 🌟 Key Features
 
-- **Hero Showcase**: Features the official Astha logo, slogan, live stats ticker, **Dual Download Buttons** ("সরাসরি APK ডাউনলোড" from GitHub Releases & "Google Play"), and an ultra-sleek 3D-styled smartphone mockup.
-- **Direct APK Download**: One-click download from GitHub Releases (`https://github.com/mojnukhan/Astha/releases/latest/download/Astha.apk`).
+- **Hero Showcase**: Features the official Astha logo, slogan, live stats ticker, **Dual Download Buttons** ("সরাসরি APK ডাউনলোড" v2.0.0 & "Google Play"), and an ultra-sleek 3D-styled smartphone mockup.
+- **Direct APK Download**: One-click download from GitHub Releases (`https://github.com/mojnukhan/Astha/releases/download/v2.0.0/Astha.-.Blood.Donation.apk`).
 - **Google Play Integration**: Directly opens the official Google Play Store listing in a new tab.
-- **Official App Screens**: Includes 4 genuine app screenshots:
+- **Official App Screens**: Includes 6 genuine app screenshots:
   1. *Smart Dashboard* (জরুরি রক্তের ড্যাশবোর্ড)
   2. *Find Blood Donors* (এলাকা ও রক্তের গ্রুপ নির্বাচন)
   3. *Create Blood Request* (জরুরি রক্তের আবেদন)
-  4. *Alerts & Notifications* (জরুরি নোটিফিকেশন)
+  4. *Request Details* (আবেদনের বিস্তারিত ও সাড়াদান)
+  5. *Alerts & Notifications* (জরুরি নোটিফিকেশন)
+  6. *User Profile* (রক্তদাতার প্রোফাইল ও স্ট্যাটাস)
 - **Interactive Screenshot Showcase**: Tabbed viewer with cross-fade transition and feature walkthrough.
 - **Interactive Blood Compatibility Matrix**: Click any blood group (A+, A-, B+, B-, AB+, AB-, O+, O-) to see who you can donate to and receive from, with medical tips.
 - **3-Step Workflow**: Visual guide explaining *Sign Up*, *Search or Post*, and *Connect & Save*.
