@@ -477,6 +477,60 @@ button {
   line-height: 1.2;
 }
 
+/* Direct APK Download Button */
+.btn-apk-download {
+  background: linear-gradient(135deg, #FF384D, #E52535 60%, #B91C1C);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #FFFFFF;
+  padding: 10px 22px;
+  border-radius: var(--radius-md);
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  box-shadow: 0 4px 20px rgba(229, 37, 53, 0.4);
+  transition: var(--transition);
+  position: relative;
+}
+
+.btn-apk-download:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(229, 37, 53, 0.65);
+  background: linear-gradient(135deg, #FF4D61, #F02839 60%, #CF1B2B);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.apk-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.btn-sub {
+  display: block;
+  font-size: 0.60rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  line-height: 1;
+  opacity: 0.85;
+  margin-bottom: 2px;
+}
+
+.btn-main {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 1.2;
+}
+
+.mobile-drawer-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: auto;
+}
+
 /* ==========================================================================
    Hero Section
    ========================================================================== */
@@ -1038,8 +1092,8 @@ button {
 /* Gallery Thumbnails row */
 .gallery-nav-row {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
   margin-top: 30px;
 }
 
@@ -1922,6 +1976,10 @@ button {
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .gallery-nav-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -1965,3 +2023,22 @@ button {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (max-width: 640px) {
+  .hero-actions, .cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 14px;
+  }
+
+  .btn-apk-download,
+  .btn-playstore,
+  .hero-actions .btn-secondary,
+  .cta-buttons .btn-secondary {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 20px;
+  }
+}
+

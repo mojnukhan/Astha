@@ -7,7 +7,9 @@ A modern, responsive, high-performance landing page for the **Astha (আস্�
 
 ## 🌟 Key Features
 
-- **Hero Showcase**: Features the official Astha logo, slogan, live stats ticker, Google Play CTA, and an ultra-sleek 3D-styled smartphone mockup.
+- **Hero Showcase**: Features the official Astha logo, slogan, live stats ticker, **Dual Download Buttons** ("সরাসরি APK ডাউনলোড" from GitHub Releases & "Google Play"), and an ultra-sleek 3D-styled smartphone mockup.
+- **Direct APK Download**: One-click download from GitHub Releases (`https://github.com/mojnukhan/Astha/releases/latest/download/Astha.apk`).
+- **Google Play Integration**: Directly opens the official Google Play Store listing in a new tab.
 - **Official App Screens**: Includes 4 genuine app screenshots:
   1. *Smart Dashboard* (জরুরি রক্তের ড্যাশবোর্ড)
   2. *Find Blood Donors* (এলাকা ও রক্তের গ্রুপ নির্বাচন)

@@ -84,9 +84,27 @@
       <li><a href="#contact" class="mobile-nav-link"><span>জরুরি হেল্পলাইন ও যোগাযোগ</span> <span>&rarr;</span></a></li>
       <li><a href="./privacy.html" class="mobile-nav-link"><span>প্রাইভেসি পলিসি (Privacy Policy)</span> <span>&rarr;</span></a></li>
     </ul>
-    <div style="margin-top: auto;">
-      <a href="#download" class="btn btn-primary" style="width: 100%; text-align: center;">
-        Google Play থেকে ডাউনলোড করুন
+    <div class="mobile-drawer-cta">
+      <a href="https://github.com/mojnukhan/Astha/releases/latest/download/Astha.apk" class="btn-apk-download" style="width: 100%; justify-content: center;" aria-label="সরাসরি Astha APK ডাউনলোড করুন (Download Astha APK directly)">
+        <svg class="apk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        <div>
+          <span class="btn-sub bn-font">Direct Download</span>
+          <span class="btn-main bn-font">সরাসরি APK ডাউনলোড</span>
+        </div>
+      </a>
+
+      <a href="https://play.google.com/store/apps/details?id=com.astha.blood" target="_blank" rel="noopener noreferrer" class="btn-playstore" style="width: 100%; justify-content: center;" aria-label="Google Play Store থেকে Astha ডাউনলোড করুন (Open on Google Play Store)">
+        <svg class="playstore-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 0 1-.61-1.637V3.451c0-.624.23-1.206.609-1.637zm11.24 11.24l2.58 2.58-12.01 6.84 9.43-9.42zm2.58-2.108l-2.58 2.58-9.43-9.42 12.01 6.84zm1.196 1.183l3.68 2.09a1.69 1.69 0 0 1 0 2.962l-3.68 2.09-2.22-2.22 2.22-2.922z"/>
+        </svg>
+        <div>
+          <span class="playstore-sub">GET IT ON</span>
+          <span class="playstore-main">Google Play</span>
+        </div>
       </a>
     </div>
   </div>
@@ -114,7 +132,21 @@
 
         <!-- CTA Buttons -->
         <div class="hero-actions">
-          <a href="#download" class="btn-playstore" id="heroPlayBtn">
+          <!-- Button 1: Direct APK Download -->
+          <a href="https://github.com/mojnukhan/Astha/releases/latest/download/Astha.apk" class="btn-apk-download" id="heroApkBtn" aria-label="সরাসরি Astha APK ডাউনলোড করুন (Download latest Astha APK directly from GitHub Releases)">
+            <svg class="apk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <div>
+              <span class="btn-sub bn-font">সর্বশেষ রিলিজ • Direct</span>
+              <span class="btn-main bn-font">সরাসরি APK ডাউনলোড</span>
+            </div>
+          </a>
+
+          <!-- Button 2: Google Play Store -->
+          <a href="https://play.google.com/store/apps/details?id=com.astha.blood" target="_blank" rel="noopener noreferrer" class="btn-playstore" id="heroPlayBtn" aria-label="Google Play Store থেকে Astha ডাউনলোড করুন (Open Astha on Google Play Store in a new tab)">
             <svg class="playstore-icon" viewBox="0 0 24 24" fill="currentColor">
               <path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 0 1-.61-1.637V3.451c0-.624.23-1.206.609-1.637zm11.24 11.24l2.58 2.58-12.01 6.84 9.43-9.42zm2.58-2.108l-2.58 2.58-9.43-9.42 12.01 6.84zm1.196 1.183l3.68 2.09a1.69 1.69 0 0 1 0 2.962l-3.68 2.09-2.22-2.22 2.22-2.922z"/>
             </svg>
@@ -124,7 +156,8 @@
             </div>
           </a>
 
-          <a href="#features" class="btn btn-secondary bn-font" id="heroLearnBtn">
+          <!-- Secondary Link -->
+          <a href="#features" class="btn btn-secondary bn-font" id="heroLearnBtn" aria-label="অ্যাপের বিস্তারিত ফিচারগুলো দেখুন">
             ফিচারগুলো দেখুন &darr;
           </a>
         </div>
@@ -375,9 +408,17 @@
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
           ৩. রক্তের আবেদন
         </button>
+        <button class="screenshot-tab" data-screen="details">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+          ৪. আবেদনের বিবরণ
+        </button>
         <button class="screenshot-tab" data-screen="alerts">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path></svg>
-          ৪. জরুরি নোটিফিকেশন
+          ৫. জরুরি নোটিফিকেশন
+        </button>
+        <button class="screenshot-tab" data-screen="profile">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          ৬. ডোনার প্রোফাইল
         </button>
       </div>
 
@@ -460,11 +501,23 @@
               </div>
               <div class="gallery-thumb-label bn-font">রক্তের আবেদন</div>
             </div>
+            <div class="gallery-thumbnail" data-screen="details">
+              <div class="gallery-thumb-img-box">
+                <img src="./assets/images/screen-details.jpg" alt="Details thumb">
+              </div>
+              <div class="gallery-thumb-label bn-font">আবেদনের বিবরণ</div>
+            </div>
             <div class="gallery-thumbnail" data-screen="alerts">
               <div class="gallery-thumb-img-box">
                 <img src="./assets/images/screen-alerts.jpg" alt="Alerts thumb">
               </div>
               <div class="gallery-thumb-label bn-font">জরুরি অ্যালার্ট</div>
+            </div>
+            <div class="gallery-thumbnail" data-screen="profile">
+              <div class="gallery-thumb-img-box">
+                <img src="./assets/images/screen-profile.jpg" alt="Profile thumb">
+              </div>
+              <div class="gallery-thumb-label bn-font">ডোনার প্রোফাইল</div>
             </div>
           </div>
 
@@ -754,7 +807,21 @@
               ‘আস্থা’ অ্যাপটি আপনার অ্যান্ড্রয়েড ডিভাইসে নামিয়ে নিন এবং জরুরি প্রয়োজনে সহায়ক ভূমিকা পালন করুন। আপনার একটি মহৎ সিদ্ধান্ত বাঁচাতে পারে একটি জীবন।
             </p>
             <div class="cta-buttons">
-              <a href="#" class="btn-playstore" onclick="alert('Google Play Store এ খুব শীঘ্রই আসছে! সরাসরি APK ডাউনলোডের সুবিধা চালু আছে।'); return false;">
+              <!-- Direct APK Download Button -->
+              <a href="https://github.com/mojnukhan/Astha/releases/latest/download/Astha.apk" class="btn-apk-download" aria-label="সরাসরি Astha APK ডাউনলোড করুন (Download latest Astha APK directly from GitHub Releases)">
+                <svg class="apk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <div>
+                  <span class="btn-sub bn-font">সর্বশেষ রিলিজ • Direct</span>
+                  <span class="btn-main bn-font">সরাসরি APK ডাউনলোড</span>
+                </div>
+              </a>
+
+              <!-- Google Play Button -->
+              <a href="https://play.google.com/store/apps/details?id=com.astha.blood" target="_blank" rel="noopener noreferrer" class="btn-playstore" aria-label="Google Play Store থেকে Astha অ্যাপ ডাউনলোড করুন (Open on Google Play Store in a new tab)">
                 <svg class="playstore-icon" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 0 1-.61-1.637V3.451c0-.624.23-1.206.609-1.637zm11.24 11.24l2.58 2.58-12.01 6.84 9.43-9.42zm2.58-2.108l-2.58 2.58-9.43-9.42 12.01 6.84zm1.196 1.183l3.68 2.09a1.69 1.69 0 0 1 0 2.962l-3.68 2.09-2.22-2.22 2.22-2.922z"/>
                 </svg>
@@ -764,7 +831,8 @@
                 </div>
               </a>
 
-              <a href="#contact" class="btn btn-secondary bn-font">
+              <!-- Contact Helpline Link -->
+              <a href="#contact" class="btn btn-secondary bn-font" aria-label="জরুরি হেল্পলাইন ও সহায়তা দেখুন">
                 হেল্পলাইন ও সহায়তা &rarr;
               </a>
             </div>
@@ -943,7 +1011,7 @@
               </li>
               <li class="helpline-item">
                 <span class="helpline-name bn-font">কোয়ান্টাম ব্লাড ব্যাংক (২৪ ঘণ্টা)</span>
-                <span class="helpline-number">01714-010869</span>
+                <span class="helpline-number">01780697569</span>
               </li>
               <li class="helpline-item">
                 <span class="helpline-name bn-font">সন্ধানী (ডিএমসি ইউনিট)</span>
@@ -962,7 +1030,7 @@
               </div>
               <div class="channel-info">
                 <strong>ইমেইল সহায়তা</strong>
-                <span>support@astha-blood.org</span>
+                <a href="mailto:moznukhan032@gmail.com" style="color: var(--text-muted); transition: color 0.2s ease;">moznukhan032@gmail.com</a>
               </div>
             </div>
 
@@ -975,7 +1043,7 @@
               </div>
               <div class="channel-info">
                 <strong>কমিউনিটি হাব</strong>
-                <span>ঢাকা, বাংলাদেশ • সমগ্র বাংলাদেশে পরিচালিত</span>
+                <span>নাগেশ্বরী, কুড়িগ্রাম • সমগ্র বাংলাদেশে পরিচালিত</span>
               </div>
             </div>
           </div>
@@ -990,7 +1058,7 @@
           <form id="contactForm">
             <div class="form-group">
               <label for="contactName" class="form-label bn-font">আপনার নাম *</label>
-              <input type="text" id="contactName" class="form-input bn-font" placeholder="যেমন: তানজিলা আহমেদ" required>
+              <input type="text" id="contactName" class="form-input bn-font" placeholder="যেমন: মজনু খান" required>
             </div>
             <div class="form-group">
               <label for="contactEmail" class="form-label bn-font">ইমেইল ঠিকানা *</label>
