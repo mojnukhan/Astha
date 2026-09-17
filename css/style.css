@@ -61,6 +61,9 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
   color-scheme: dark;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
 }
 
 body {
@@ -69,6 +72,8 @@ body {
   color: var(--text-main);
   line-height: 1.6;
   overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
   position: relative;
   -webkit-font-smoothing: antialiased;
 }
@@ -455,8 +460,8 @@ button {
 }
 
 .playstore-icon {
-  width: 28px;
-  height: 28px;
+  width: 22px;
+  height: 22px;
   flex-shrink: 0;
 }
 
@@ -501,8 +506,8 @@ button {
 }
 
 .apk-icon {
-  width: 28px;
-  height: 28px;
+  width: 20px;
+  height: 20px;
   flex-shrink: 0;
 }
 
@@ -876,6 +881,8 @@ button {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .feature-icon-wrapper {
@@ -916,6 +923,8 @@ button {
   display: flex;
   align-items: baseline;
   gap: 8px;
+  flex-wrap: wrap;
+  word-break: break-word;
 }
 
 .feature-title-bn {
@@ -1913,7 +1922,7 @@ button {
 @media (max-width: 1024px) {
   .hero-grid {
     grid-template-columns: 1fr;
-    gap: 50px;
+    gap: 40px;
     text-align: center;
   }
 
@@ -1928,14 +1937,6 @@ button {
 
   .hero-stats {
     justify-content: center;
-  }
-
-  .floating-badge-1 {
-    left: 0;
-  }
-
-  .floating-badge-2 {
-    right: 0;
   }
 
   .features-grid {
@@ -1983,6 +1984,14 @@ button {
 }
 
 @media (max-width: 768px) {
+  .bg-ambient {
+    display: none !important;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
   .nav-links, .nav-cta .btn {
     display: none;
   }
@@ -1992,7 +2001,48 @@ button {
   }
 
   .section {
-    padding: 70px 0;
+    padding: 60px 0;
+  }
+
+  .hero-section {
+    padding-top: 110px;
+    padding-bottom: 50px;
+  }
+
+  .hero-title {
+    font-size: 2.1rem;
+  }
+
+  .hero-visual {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .phone-mockup-wrapper {
+    max-width: 280px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .phone-glow-ring {
+    width: 260px;
+    height: 260px;
+  }
+
+  /* Prevent floating badges from extending past the viewport */
+  .floating-badge {
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    margin: 10px auto !important;
+    width: 100% !important;
+    max-width: 280px !important;
+    transform: none !important;
+    animation: none !important;
+    box-sizing: border-box;
   }
 
   .why-grid {
@@ -2004,11 +2054,11 @@ button {
   }
 
   .matrix-card {
-    padding: 24px 20px;
+    padding: 22px 14px;
   }
 
   .cta-banner {
-    padding: 36px 24px;
+    padding: 32px 18px;
   }
 
   .footer-grid {
@@ -2016,20 +2066,32 @@ button {
   }
 
   .policy-card {
-    padding: 30px 20px;
+    padding: 24px 16px;
   }
 
   .gallery-nav-row {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .showcase-display {
+    padding: 24px 14px;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 1.85rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
   .hero-actions, .cta-buttons {
     flex-direction: column;
     align-items: stretch;
     width: 100%;
-    gap: 14px;
+    gap: 12px;
   }
 
   .btn-apk-download,
@@ -2038,7 +2100,78 @@ button {
   .cta-buttons .btn-secondary {
     width: 100%;
     justify-content: center;
-    padding: 14px 20px;
+    padding: 12px 16px;
+    box-sizing: border-box;
+  }
+
+  .hero-stats {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .stat-item {
+    flex: 1 1 30%;
+    text-align: center;
+  }
+
+  .stat-divider {
+    display: none;
+  }
+
+  .screenshots-tabs {
+    gap: 6px;
+  }
+
+  .screenshot-tab {
+    padding: 7px 12px;
+    font-size: 0.8rem;
+    flex: 1 1 calc(50% - 8px);
+    justify-content: center;
+    text-align: center;
+  }
+
+  .gallery-nav-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+
+  .gallery-thumb-img-box {
+    height: 60px;
+  }
+
+  .gallery-thumb-label {
+    font-size: 0.7rem;
+  }
+
+  .blood-selector-row {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 8px !important;
+    width: 100% !important;
+  }
+
+  .blood-btn {
+    width: 100% !important;
+    height: 48px !important;
+    font-size: 1rem !important;
+  }
+
+  .qr-box-wrapper {
+    display: none;
+  }
+
+  .helpline-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .helpline-number {
+    font-size: 1rem;
+  }
+
+  .contact-info-card, .contact-form-card {
+    padding: 24px 16px;
   }
 }
 
